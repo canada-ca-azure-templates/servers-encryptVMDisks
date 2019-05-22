@@ -45,15 +45,6 @@
                     "dependsOn": [
                         "resourcegroups"
                     ]
-                },
-                {
-                    "name": "server",
-                    "location": "canadacentral",
-                    "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/servers/20190506/template/azuredeploy.json",
-                    "parametersFile": "dependancy-server.parameters.json",
-                    "dependsOn": [
-                        "resourcegroups", "availavilityset","storage","vnet-subnet","keyvault-infra"
-                    ]
                 }
             ]
         }
