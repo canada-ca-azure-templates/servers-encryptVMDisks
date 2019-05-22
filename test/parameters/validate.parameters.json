@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "containerSasToken": {
-            "value": "[SasToken]"
+            "value": ""
         },
         "vmArray": {
             "value": [
                 {
                     "vmResourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
-                    "vmName": "EncryptTest1",
+                    "vmName": "PwS2-EncryptTest1",
                     "keyVaultResourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
                     "keyVaultName": "PwS2-validate-[unique]"
                 }
