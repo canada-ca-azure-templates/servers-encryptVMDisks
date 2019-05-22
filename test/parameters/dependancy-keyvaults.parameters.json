@@ -6,7 +6,7 @@
             "value": [
                 {
                     "name": "PwS2-validate-[unique]",
-                    "resourceGroup": "PwS2-validate-encryptServers-RG",
+                    "resourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
                     "sku": "Standard",
                     "enabledForDeployment": true,
                     "enabledForTemplateDeployment": true,

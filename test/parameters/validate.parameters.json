@@ -8,9 +8,9 @@
         "vmArray": {
             "value": [
                 {
-                    "vmResourceGroup": "PwS2-validate-encryptServers-RG",
+                    "vmResourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
                     "vmName": "EncryptTest1",
-                    "keyVaultResourceGroup": "PwS2-validate-encryptServers-RG",
+                    "keyVaultResourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
                     "keyVaultName": "PwS2-validate-[unique]"
                 }
             ]
