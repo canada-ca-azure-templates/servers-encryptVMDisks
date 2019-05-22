@@ -2,15 +2,13 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "storageArray": {
+        "deploymentRGArray": {
             "value": [
                 {
-                    "comment": "Configure vmdiag account in support of servers in resourcegroup",
+                    "name": "server",
                     "resourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
-                    "storageAccountPrefix": "vmdiag",
-                    "accountType": "Standard_LRS",
-                    "kind": "StorageV2",
-                    "supportsHttpsTrafficOnly": true
+                    "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/servers/20190506/template/azuredeploy.json",
+                    "parametersFile": "dependancy-server.parameters.json"
                 }
             ]
         }

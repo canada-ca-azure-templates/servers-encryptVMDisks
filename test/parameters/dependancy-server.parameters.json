@@ -6,13 +6,13 @@
             "value": [
                 {
                     "comment": "Test most basic Windows vm.",
-                    "resourceGroup": "PwS2-validate-encryptServers-RG",
+                    "resourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
                     "vmKeyVault": {
-                        "keyVaultResourceGroupName": "PwS2-validate-encryptServers-RG",
+                        "keyVaultResourceGroupName": "PwS2-validate-servers-encryptVMDisks-RG",
                         "keyVaultName": "PwS2-validate-[unique]"
                     },
                     "vm": {
-                        "computerName": "EncryptTest1",
+                        "computerName": "PwS2-Encrypt1",
                         "adminUsername": "azureadmin",
                         "adminPassword": "server2016DefaultPassword",
                         "licenseType": "Windows_Server",
@@ -43,7 +43,7 @@
                     "networkInterfaces": {
                         "name": "NIC1",
                         "acceleratedNetworking": false,
-                        "vnetResourceGroupName": "PwS2-validate-encryptServers-RG",
+                        "vnetResourceGroupName": "PwS2-validate-servers-encryptVMDisks-RG",
                         "vnetName": "PwS2-validate-servers-1-VNET",
                         "subnetName": "test1"
                     },

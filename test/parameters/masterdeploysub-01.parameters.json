@@ -36,24 +36,6 @@
                     "dependsOn": [
                         "resourcegroups"
                     ]
-                },
-                {
-                    "name": "availavilityset",
-                    "location": "canadacentral",
-                    "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/availabilityset/20190506/template/azuredeploysub.json",
-                    "parametersFile": "dependancy-availabilityset.parameters.json",
-                    "dependsOn": [
-                        "resourcegroups"
-                    ]
-                },
-                {
-                    "name": "server",
-                    "location": "canadacentral",
-                    "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/servers/20190506/template/azuredeploy.json",
-                    "parametersFile": "dependancy-server.parameters.json",
-                    "dependsOn": [
-                        "resourcegroups"
-                    ]
                 }
             ]
         }
