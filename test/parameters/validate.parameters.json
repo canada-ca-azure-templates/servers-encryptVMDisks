@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "containerSasToken": {
+            "value": "[SasToken]"
+        },
+        "vmArray": {
+            "value": [
+                {
+                    "vmResourceGroup": "PwS2-validate-encryptServers-RG",
+                    "vmName": "EncryptTest1",
+                    "keyVaultResourceGroup": "PwS2-validate-encryptServers-RG",
+                    "keyVaultName": "PwS2-validate-[unique]"
+                }
+            ]
+        }
+    }
+}
