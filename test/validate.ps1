@@ -72,7 +72,7 @@ if (-not $doNotDeployPreReq) {
     Write-Host "Starting $templateLibraryName dependancies deployment...";
 
     New-AzureRmDeployment -location "canadacentral" -Name "Deploy-$templateLibraryName-Dependancies" -TemplateUri "https://raw.githubusercontent.com/canada-ca-azure-templates/masterdeploy/20190514/template/masterdeploysub.json" -TemplateParameterFile (Resolve-Path -Path "$PSScriptRoot\parameters\masterdeploysub-01.parameters.json") -baseParametersURL $baseParametersURL -Verbose;
-    New-AzureRmDeployment -ResourceGroupName PwS2-validate-$templateLibraryName-RG -Name "Deploy-$templateLibraryName-Dependancies" -TemplateUri "https://raw.githubusercontent.com/canada-ca-azure-templates/masterdeploy/20190514/template/masterdeployrg.json" -TemplateParameterFile (Resolve-Path -Path "$PSScriptRoot\parameters\masterdeploysub-02.parameters.json") -baseParametersURL $baseParametersURL -Verbose;
+    New-AzureRmDeployment -location "canadacentral" -Name "Deploy-$templateLibraryName-Dependancies" -TemplateUri "https://raw.githubusercontent.com/canada-ca-azure-templates/masterdeploy/20190514/template/masterdeployrg.json" -TemplateParameterFile (Resolve-Path -Path "$PSScriptRoot\parameters\masterdeploysub-02.parameters.json") -baseParametersURL $baseParametersURL -Verbose;
  
     $provisionningState = (Get-AzureRmDeployment -Name "Deploy-$templateLibraryName-Dependancies").ProvisioningState
     
