@@ -63,4 +63,4 @@ The following items are assumed to exist already in the deployment:
 |-----------|-------|-----------------------|
 |2019-02-07 |       |Intial versions|
 |2019-05-08 |       |Updated documentation|
-|20190522   |[20190522](https://github.com/canada-ca-azure-templates/vnet-peering/tree/20190522)|Updated tests and moved to new github repo|
+|20190523   |[20190523](https://github.com/canada-ca-azure-templates/vnet-peering/tree/20190523)|Updated tests and moved to new github repo|
