@@ -2,11 +2,11 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "deploymentSubArray": {
+        "deploymentRGArray": {
             "value": [
                 {
                     "name": "server",
-                    "location": "canadacentral",
+                    "resourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
                     "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/servers/20190506/template/azuredeploy.json",
                     "parametersFile": "dependancy-server.parameters.json"
                 }
