@@ -12,7 +12,7 @@
                         "keyVaultName": "PwS2-validate-[unique]"
                     },
                     "vm": {
-                        "computerName": "PwS2-EncryptTest1",
+                        "computerName": "PwS2-Encrypt1",
                         "adminUsername": "azureadmin",
                         "adminPassword": "server2016DefaultPassword",
                         "licenseType": "Windows_Server",

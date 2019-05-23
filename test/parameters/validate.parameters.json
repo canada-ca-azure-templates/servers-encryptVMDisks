@@ -6,7 +6,7 @@
             "value": [
                 {
                     "vmResourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
-                    "vmName": "PwS2-EncryptTest1",
+                    "vmName": "PwS2-Encrypt1",
                     "keyVaultResourceGroup": "PwS2-validate-servers-encryptVMDisks-RG",
                     "keyVaultName": "PwS2-validate-[unique]"
                 }
